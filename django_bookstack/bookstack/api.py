@@ -72,7 +72,6 @@ class BookStackInstance(object):
 
     @staticmethod
     def _get_api_args(uri):
-        print(uri)
         return [api_arg
                 for _, api_arg, _, _ in string.Formatter().parse(uri)]
 
