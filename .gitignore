@@ -1,0 +1,15 @@
+*__pycache__*
+build/
+.vscode
+dist/
+*.egg-info
+*.egg
+*.pyc
+*.swp
+*~
+*.DS_Store
+/venv
+*.tar
+CACHE
+*/migrations/0*
+.venv
