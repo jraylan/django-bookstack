@@ -13,7 +13,7 @@ def cached(view):
     If the config is not set it will cache the view for 300 seconds.
     If the config is set to <= 0 or a not int value it will not cache the view.
     '''
-    cache_timeout = (settings, 'DJANGO_BOOKSTACK_CACHE_TIMEOUT', 300)
+    cache_timeout = getattr(settings, 'DJANGO_BOOKSTACK_CACHE_TIMEOUT', 300)
     if isinstance(cache_timeout, int) and cache_timeout > 0:
         return cache_page(cache_timeout)(view)
         
