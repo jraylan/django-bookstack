@@ -96,7 +96,7 @@ class BookStackInstance(object):
         try:
             content = response.json()
         except JSONDecodeError:
-            content = response.text
+            content = response.content.decode('utf-8')
 
         return content
 
