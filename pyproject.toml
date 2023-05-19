@@ -1,3 +1,28 @@
 [build-system]
 requires = ['setuptools>=40.8.0', 'wheel', 'simplejson']
 build-backend = 'setuptools.build_meta:__legacy__'
+
+[project]
+name = "django-bookstack"
+version = "0.0.2"
+authors = [
+  { name="JRaylan", email="jeffersonraylan@gmail.com" },
+]
+description = "This project is a integration beteween Bookstack and Django."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+]
+dependencies = [
+  "websockets == 11.0.1",
+  "Django >= 1.11.29",
+  "requests",
+  "simplejson"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jraylan/django-bookstack"
+"Bug Tracker" = "https://github.com/jraylan/django-bookstack/issues"
