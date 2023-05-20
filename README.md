@@ -5,7 +5,7 @@ interact with a BookStack API.
 
 ## Quick start
 
-2.  Add \"django_bookstack\" to your INSTALLED_APPS setting like this:
+2.  Add \"django_bookstack\" to your INSTALLED_APPS settings like this:
 
 ``` python
 # settings.py
@@ -39,7 +39,7 @@ bookstack.library.register_instance(instance, 'instance_name')
 #urls.py
 
 urlpatterns = [
-    ...
+    ...,
     path('/', include('django_bookstack.urls')),
 ]
 
