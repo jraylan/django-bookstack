@@ -17,7 +17,6 @@ classifiers = [
     "Operating System :: Unix",
 ]
 dependencies = [
-  "websockets == 11.0.1",
   "Django >= 1.11.29",
   "requests",
   "simplejson"
